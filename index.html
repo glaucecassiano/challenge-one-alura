@@ -10,22 +10,22 @@
       function codifica() {
         var input = document.getElementById("codigo");
         var texto = input.value
-        texto = texto.replace("a","ai");
-        texto = texto.replace("e","enter");
-        texto = texto.replace("i","imes");
-        texto = texto.replace("o","ober");
-        texto = texto.replace("u","ufat");
+        texto = texto.replaceAll("a","ai");
+        texto = texto.replaceAll("e","enter");
+        texto = texto.replaceAll("i","imes");
+        texto = texto.replaceAll("o","ober");
+        texto = texto.replaceAll("u","ufat");
         input.value = texto
       }
 
       function decodifica(){
         var input = document.getElementById("codigo");
         var texto = input.value
-        texto = texto.replace("ufat","u");
-        texto = texto.replace("ober","o");
-        texto = texto.replace("imes","i");
-        texto = texto.replace("enter","e");
-        texto = texto.replace("ai","a");
+        texto = texto.replaceAll("ufat","u");
+        texto = texto.replaceAll("ober","o");
+        texto = texto.replaceAll("imes","i");
+        texto = texto.replaceAll("enter","e");
+        texto = texto.replaceAll("ai","a");
         input.value = texto
 
       }
